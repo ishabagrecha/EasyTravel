@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EasyTravel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container flex">
+        <!-- right side -->
+        <a href="index.html" class="site-brand"> Easy<span>Travel</span> </a>
+
+        <!-- for responsive navbar hamburger menu button -->
+        <button
+          type="button"
+          id="navbar-show-btn"
+          class="flex"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <div id="navbar-collapse">
+          <button
+            type="button"
+            id="navbar-close-btn"
+            class="flex"
+            aria-label="Close navigation menu"
+            aria-expanded="true"
+          >
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+
+          <!-- left side -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-label="Home page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link" aria-label="Gallery page"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-label="About page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" aria-label="Contact page"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link" aria-label="Login page"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="flex header-sm">
+      <div class="container">
+        <div class="header-title">
+          <h1>Contact</h1>
+          <h2>
+            Want to know more about us?<br />
+            know about Us!
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- contact section -->
+    <section id="contact" class="py-4">
+      <div class="container">
+        <div class="title-wrap">
+          <span class="sm-title">get in touch with us</span>
+          <h2 class="lg-title">contact us</h2>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-left">
+            <form class="contact-form" id="contactForm">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your name"
+                id="name"
+                required
+              />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                id="email"
+                required
+              />
+              <textarea
+                rows="4"
+                class="form-control"
+                placeholder="Your message"
+                id="message"
+              ></textarea>
+              <input type="submit" class="btn" value="Send message" />
+              <div id="error-message" style="color: red"></div>
+            </form>
+          </div>
+          <div class="contact-right my-2">
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-phone-alt"></i>
+              </span>
+              <div>
+                <span>Phone</span>
+                <p class="text">+91-98886009</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-map-marked-alt"></i>
+              </span>
+              <div>
+                <span>Address</span>
+                <p class="text">102 East 22nd Street, mg road</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <div>
+                <span>Message</span>
+                <p class="text">info@easytravel.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4">
+      <div class="container footer-row">
+        <div class="footer-item">
+          <a href="index.html" class="site-brand"> Easy<span>Travel</span> </a>
+          <p class="text">To make your travel dreams a reality.</p>
+        </div>
+
+        <div class="footer-item">
+          <h2>Follow us on:</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h2>Popular Places:</h2>
+          <ul>
+            <li><a href="#">jasialmer</a></li>
+            <li><a href="#">Taj mahal</a></li>
+            <li><a href="#">kerala</a></li>
+            <li><a href="#">hampi</a></li>
+            <li><a href="#">sikkim</a></li>
+          </ul>
+        </div>
+
+        <div class="subscribe-form footer-item">
+          <h2>Subscribe for Newsletter!</h2>
+          <form class="flex">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              class="form-control"
+              required
+              aria-label="Enter your email for subscription"
+            />
+            <input type="submit" class="btn" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

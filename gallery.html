@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EasyTravel</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container flex">
+        <!-- right side -->
+        <a href="index.html" class="site-brand"> Easy<span>Travel</span> </a>
+
+        <!-- for responsive navbar hamburger menu button -->
+        <button
+          type="button"
+          id="navbar-show-btn"
+          class="flex"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <div id="navbar-collapse">
+          <button
+            type="button"
+            id="navbar-close-btn"
+            class="flex"
+            aria-label="Close navigation menu"
+            aria-expanded="true"
+          >
+            <i class="fas fa-times" aria-hidden="true"></i>
+          </button>
+
+          <!-- left side -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-label="Home page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link" aria-label="Gallery page"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-label="About page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" aria-label="Contact page"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link" aria-label="Login page"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="flex header-sm">
+      <div class="container">
+        <div class="header-title">
+          <h1>Gallery</h1>
+          <p>
+            Explore our curated collection of breathtaking destinations and
+            unique experiences from around the world. Each image captures the
+            essence of adventure, showcasing stunning landscapes, vibrant
+            cultures, and hidden gems that inspire travelers. Dive into this
+            gallery to find inspiration for your next journey and witness the
+            beauty that awaits.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- gallery section -->
+    <div id="gallery" class="py-4">
+      <div class="container">
+        <div class="gallery-row">
+          <div class="gallery-item shadow">
+            <img src="images/gallery-1.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-2.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-3.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-4.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-5.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-6.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-7.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-8.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+          <div class="gallery-item shadow">
+            <img src="images/gallery-9.jpg" alt="gallery img" />
+            <span class="zoom-icon">
+              <i class="fas fa-search-plus"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- img modal -->
+    <div id="img-modal-box">
+      <div id="img-modal">
+        <button type="button" id="modal-close-btn" class="flex">
+          <i class="fas fa-times"></i>
+        </button>
+        <button type="button" id="prev-btn" class="flex">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" id="next-btn" class="flex">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <img src="images/gallery-1.jpg" />
+      </div>
+    </div>
+
+    <!-- popular places section -->
+    <section id="popular" class="py-4">
+      <div class="title-wrap">
+        <span class="sm-title">Know about some cool destinations</span>
+        <h2 class="lg-title">Popular Places</h2>
+      </div>
+
+      <div class="popular-row">
+        <div class="popular-item shadow">
+          <img src="images/tj.jpg" alt="" />
+          <div>
+            <span>Taj Mahal, Agra</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;800 reviews</li>
+            </ul>
+            <p class="text">
+              A symbol of love and one of the Seven Wonders of the World, the
+              Taj Mahal is an architectural masterpiece.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/popular-2.jpg" alt="" />
+          <div>
+            <span>Hampi, Karnataka</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;650 reviews</li>
+            </ul>
+            <p class="text">
+              Ancient temples and ruins set amidst a surreal landscape make
+              Hampi a UNESCO World Heritage Site.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/popular-4.jpg" alt="" />
+          <div>
+            <span>Backwaters, Kerala</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;700 reviews</li>
+            </ul>
+            <p class="text">
+              Known for its tranquil and scenic backwaters, Kerala offers a
+              unique experience of houseboat cruises.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/rj.avif" alt="" />
+          <div>
+            <span>Jaisalmer, Rajasthan</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;550 reviews</li>
+            </ul>
+            <p class="text">
+              Known as the Golden City, Jaisalmer is famous for its stunning
+              fort, desert safari, and rich history.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/popular-5.jpg" alt="" />
+          <div>
+            <span>Bangalore, Karnataka</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li>&nbsp;1,250 reviews</li>
+            </ul>
+            <p class="text">
+              Known as the Silicon Valley of India, Bangalore is famous for its
+              vibrant tech industry, bustling nightlife, and beautiful parks
+              like Lalbagh and Cubbon Park.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/popular-6.jpg" alt="" />
+          <div>
+            <span>Gangtok, Sikkim</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;480 reviews</li>
+            </ul>
+            <p class="text">
+              With views of Mount Kanchenjunga, Gangtok is a hill station with
+              vibrant culture and scenic beauty.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/popular-7.jpg" alt="" />
+          <div>
+            <span>Amritsar, Punjab</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;760 reviews</li>
+            </ul>
+            <p class="text">
+              Home to the Golden Temple, Amritsar is a city rich in history and
+              religious significance.
+            </p>
+          </div>
+        </div>
+
+        <div class="popular-item shadow">
+          <img src="images/tm.jpg" alt="" />
+          <div>
+            <span>Kodaikanal, Tamil Nadu</span>
+            <ul class="rating flex">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star-half-alt"></i></li>
+              <li>&nbsp;520 reviews</li>
+            </ul>
+            <p class="text">
+              Known as the Princess of Hill Stations, Kodaikanal offers misty
+              mountains, serene lakes, and lush forests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4">
+      <div class="container footer-row">
+        <div class="footer-item">
+          <a href="index.html" class="site-brand"> Easy<span>Travel</span> </a>
+          <p class="text">To make your travel dreams a reality.</p>
+        </div>
+
+        <div class="footer-item">
+          <h2>Follow us on:</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h2>Popular Places:</h2>
+          <ul>
+            <li><a href="#">jasialmer</a></li>
+            <li><a href="#">Taj mahal</a></li>
+            <li><a href="#">kerala</a></li>
+            <li><a href="#">hampi</a></li>
+            <li><a href="#">sikkim</a></li>
+          </ul>
+        </div>
+
+        <div class="subscribe-form footer-item">
+          <h2>Subscribe for Newsletter!</h2>
+          <form class="flex">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              class="form-control"
+              required
+              aria-label="Enter your email for subscription"
+            />
+            <input type="submit" class="btn" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+      // image modal
+      const allGalleryItem = document.querySelectorAll(".gallery-item");
+      const imgModalDiv = document.getElementById("img-modal-box");
+      const modalCloseBtn = document.getElementById("modal-close-btn");
+      const nextBtn = document.getElementById("next-btn");
+      const prevBtn = document.getElementById("prev-btn");
+      let imgIndex = 0;
+
+      allGalleryItem.forEach((galleryItem) => {
+        galleryItem.addEventListener("click", () => {
+          imgModalDiv.style.display = "block";
+          let imgSrc = galleryItem.querySelector("img").src;
+          imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+          console.log(imgIndex);
+          showImageContent(imgIndex);
+        });
+      });
+
+      // next click
+      nextBtn.addEventListener("click", () => {
+        imgIndex++;
+        if (imgIndex > allGalleryItem.length) {
+          imgIndex = 1;
+        }
+        showImageContent(imgIndex);
+      });
+
+      // previous click
+      prevBtn.addEventListener("click", () => {
+        imgIndex--;
+        if (imgIndex <= 0) {
+          imgIndex = allGalleryItem.length;
+        }
+        showImageContent(imgIndex);
+      });
+
+      function showImageContent(index) {
+        imgModalDiv.querySelector(
+          "#img-modal img"
+        ).src = `images/gallery-${index}.jpg`;
+      }
+
+      modalCloseBtn.addEventListener("click", () => {
+        imgModalDiv.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
